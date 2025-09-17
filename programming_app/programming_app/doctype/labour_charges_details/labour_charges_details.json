@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-15 13:06:54.019704",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "salary",
+  "day_salary",
+  "per_hours_salary"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Float",
+   "label": "Salary",
+   "precision": "2"
+  },
+  {
+   "fieldname": "day_salary",
+   "fieldtype": "Float",
+   "label": "Per Day Salary",
+   "precision": "2"
+  },
+  {
+   "fieldname": "per_hours_salary",
+   "fieldtype": "Float",
+   "label": "Per Hours Salary",
+   "precision": "2"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-16 12:42:01.757106",
+ "modified_by": "saifakazi02@gmail.com",
+ "module": "Programming App",
+ "name": "Labour Charges Details",
+ "owner": "saifakazi02@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:child_doc_name",
+ "creation": "2025-08-21 16:52:53.507971",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "child_doc_name",
+  "parent_doc_link",
+  "parent_full_name",
+  "parent_age",
+  "parent_present_address",
+  "table_section_section",
+  "table1",
+  "list_all_perent_docs_section_section",
+  "button",
+  "parent_list",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "parent_doc_link",
+   "fieldtype": "Link",
+   "label": "Parent Doc Link",
+   "options": "Parent Doc"
+  },
+  {
+   "fieldname": "parent_full_name",
+   "fieldtype": "Data",
+   "label": "Parent Full Name"
+  },
+  {
+   "fieldname": "parent_age",
+   "fieldtype": "Int",
+   "label": "Parent Age"
+  },
+  {
+   "fieldname": "parent_present_address",
+   "fieldtype": "Small Text",
+   "label": "Parent Present Address"
+  },
+  {
+   "fieldname": "table_section_section",
+   "fieldtype": "Section Break",
+   "label": "Table section"
+  },
+  {
+   "fieldname": "table1",
+   "fieldtype": "Table",
+   "label": "Parent Date and Values",
+   "options": "Child Child Table"
+  },
+  {
+   "fieldname": "list_all_perent_docs_section_section",
+   "fieldtype": "Section Break",
+   "label": "List all Perent Docs Section"
+  },
+  {
+   "fieldname": "button",
+   "fieldtype": "Button",
+   "label": "Get All Parent Docs"
+  },
+  {
+   "fieldname": "parent_list",
+   "fieldtype": "Table",
+   "label": "Parent List",
+   "options": "Child Doc1"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Child Doc",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "child_doc_name",
+   "fieldtype": "Data",
+   "label": "Child Doc Name",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-22 18:28:26.658934",
+ "modified_by": "Administrator",
+ "module": "Programming App",
+ "name": "Child Doc",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
