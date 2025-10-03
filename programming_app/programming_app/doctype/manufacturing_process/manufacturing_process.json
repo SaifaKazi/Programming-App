@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-25 18:51:29.908545",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_bw4c",
+  "amended_from",
+  "packaging_item",
+  "packaging_quantity",
+  "bom1",
+  "uom1",
+  "column_break_johc",
+  "base_item",
+  "base_quantity",
+  "bom2",
+  "uom",
+  "section_break_ninm",
+  "packing_items",
+  "column_break_ugkl",
+  "table_loet"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_bw4c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Manufacturing Process",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "packaging_item",
+   "fieldtype": "Link",
+   "label": "Packaging Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "packaging_quantity",
+   "fieldtype": "Int",
+   "label": "Packaging Quantity"
+  },
+  {
+   "fieldname": "bom1",
+   "fieldtype": "Link",
+   "label": "Packaging BOM",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "column_break_johc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "base_item",
+   "fieldtype": "Link",
+   "label": "Base Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "base_quantity",
+   "fieldtype": "Int",
+   "label": "Base Quantity"
+  },
+  {
+   "fieldname": "bom2",
+   "fieldtype": "Link",
+   "label": "Base BOM",
+   "options": "BOM"
+  },
+  {
+   "fetch_from": "bom1.uom",
+   "fieldname": "uom1",
+   "fieldtype": "Link",
+   "label": "Packaging UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "bom2.uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Base UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ninm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "packing_items",
+   "fieldtype": "Table",
+   "label": "Packaging Items",
+   "options": "Packaging Items"
+  },
+  {
+   "fieldname": "column_break_ugkl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "table_loet",
+   "fieldtype": "Table",
+   "label": "Base Items",
+   "options": "Base Items"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-29 18:31:38.601991",
+ "modified_by": "Administrator",
+ "module": "Programming App",
+ "name": "Manufacturing Process",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
