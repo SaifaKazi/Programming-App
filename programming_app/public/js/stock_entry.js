@@ -14,6 +14,7 @@ function update_total_and_amount(frm) {
             row.amount = total_per_hours;
         }
     });
+    
     frm.refresh_field("additional_costs");
 }
 frappe.ui.form.on('Labour Charges Details', { //for Labour Details child table
