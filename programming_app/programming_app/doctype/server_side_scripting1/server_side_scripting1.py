@@ -7,6 +7,7 @@ from frappe.model.document import Document
 
 class ServerSideScripting1(Document):
     pass
+
 	# def validate(self):
 	# 	frappe.msgprint("validate event")
 	# def before_save(self):
