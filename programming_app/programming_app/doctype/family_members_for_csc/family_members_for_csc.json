@@ -1,20 +1,27 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-08-22 18:24:59.196665",
+ "creation": "2025-10-10 11:21:45.367114",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "full_name",
+  "name1",
+  "relation",
   "age"
  ],
  "fields": [
   {
-   "fieldname": "full_name",
+   "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Full Name"
+   "label": "Name"
+  },
+  {
+   "fieldname": "relation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Relation"
   },
   {
    "fieldname": "age",
@@ -27,10 +34,10 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-10-07 16:02:51.473047",
- "modified_by": "saifakazi02@gmail.com",
+ "modified": "2025-10-10 11:26:44.618434",
+ "modified_by": "Administrator",
  "module": "Programming App",
- "name": "Child Doc1",
+ "name": "Family Members for CSC",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",
