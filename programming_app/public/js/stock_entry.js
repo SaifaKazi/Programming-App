@@ -90,4 +90,3 @@ frappe.ui.form.on('Landed Cost Taxes and Charges', { //for Additional Costs chil
     },
 
 });
-

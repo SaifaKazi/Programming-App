@@ -15,3 +15,4 @@ def frappe_call(msg):
 	frappe.msgprint(msg)
 	# self.mobile_number = 9879797979
 	# return f"msg from frappe_call: {msg}"
+

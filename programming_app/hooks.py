@@ -137,13 +137,17 @@ doctype_js = {"Stock Entry" : "public/js/stock_entry.js"}
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+    "Stock Entry": {
+        "on_submit":"programming_app.public.py.stock_entry.on_submit_stock_entry"
+    }
+
+}
 
 # Scheduled Tasks
 # ---------------

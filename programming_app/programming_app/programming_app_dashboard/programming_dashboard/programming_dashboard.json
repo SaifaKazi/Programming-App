@@ -1,0 +1,25 @@
+{
+ "cards": [
+  {
+   "card": "Card One"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Dashboard Chart One",
+   "width": "Full"
+  }
+ ],
+ "creation": "2025-10-24 12:53:54.766214",
+ "dashboard_name": "Programming Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-10-24 13:18:37.025599",
+ "modified_by": "saifakazi02@gmail.com",
+ "module": "Programming App",
+ "name": "Programming Dashboard",
+ "owner": "saifakazi02@gmail.com"
+}
