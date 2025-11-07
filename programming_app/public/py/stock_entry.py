@@ -115,6 +115,7 @@ def data(doc):
 
 @frappe.whitelist()
 def on_submit_stock_entry(doc, method=None):
+    # frappe.msgprint("hi")
     # Run only for Manufacture type Stock Entries
     if doc.stock_entry_type != "Manufacture":
         return
@@ -149,7 +150,7 @@ def on_submit_stock_entry(doc, method=None):
 
         projected_qty = frappe.db.get_value(
             "Bin",
-            {"item_code": row.item_code, "warehouse": row.warehouse},
+            {"item_code": row.item_code, "warehouse": row.t_warehouse},
             "projected_qty"
         ) or 0
 
@@ -167,14 +168,14 @@ def on_submit_stock_entry(doc, method=None):
             "voucher_no": so,
             "voucher_detail_no": row_name,
             "voucher_qty": qty,
-            "reserved_qty": min(qty, projected_qty),
-            "available_qty": projected_qty,  # ✅ Using projected_qty here
+            "reserved_qty": frappe.get_value("Work Order", doc.work_order, "produced_qty") or 0,
+            "available_qty": projected_qty,
             "company": doc.company
         })
 
         stock_reserve.insert(ignore_permissions=True)
         stock_reserve.submit()
 
-    frappe.msgprint("✅ Stock Reservation Entry created successfully based on projected quantity.")
+    frappe.msgprint("Stock Reservation Entry created successfully")
 
     
