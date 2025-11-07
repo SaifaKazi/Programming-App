@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-01 17:26:45.350203",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "attach_pdf",
+  "normal_text_section",
+  "name1",
+  "column_break_xskl",
+  "age",
+  "column_break_nlbk",
+  "address",
+  "column_break_qvtz",
+  "pincode",
+  "table_text_section",
+  "name11",
+  "column_break_wkab",
+  "age1",
+  "column_break_ywbk",
+  "address1",
+  "column_break_inxv",
+  "pincode1"
+ ],
+ "fields": [
+  {
+   "fieldname": "attach_pdf",
+   "fieldtype": "Attach",
+   "label": "Attach PDF"
+  },
+  {
+   "fieldname": "normal_text_section",
+   "fieldtype": "Section Break",
+   "label": "Normal Text"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_xskl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "column_break_nlbk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_qvtz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Int",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "table_text_section",
+   "fieldtype": "Section Break",
+   "label": "Table Text"
+  },
+  {
+   "fieldname": "name11",
+   "fieldtype": "Data",
+   "label": "Name11"
+  },
+  {
+   "fieldname": "column_break_wkab",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "age1",
+   "fieldtype": "Int",
+   "label": "Age1"
+  },
+  {
+   "fieldname": "column_break_ywbk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address1",
+   "fieldtype": "Data",
+   "label": "Address1"
+  },
+  {
+   "fieldname": "column_break_inxv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pincode1",
+   "fieldtype": "Int",
+   "label": "Pincode1"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-01 17:51:14.517843",
+ "modified_by": "Administrator",
+ "module": "Programming App",
+ "name": "PDF Reader",
+ "owner": "saifakazi02@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
